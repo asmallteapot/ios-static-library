@@ -26,6 +26,8 @@
 		A99EF5311951DECC004DB12A /* ASTLemongrabViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A99EF51C1951D429004DB12A /* ASTLemongrabViewController.h */; };
 		A99EF5361951E2D1004DB12A /* ASTXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A99EF5351951E2D1004DB12A /* ASTXMLParser.m */; };
 		A99EF5371951E477004DB12A /* ASTXMLParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A99EF5341951E2D1004DB12A /* ASTXMLParser.h */; };
+		A99EF53B1951E656004DB12A /* ASTXMLParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A99EF53A1951E656004DB12A /* ASTXMLParserTests.m */; };
+		A99EF53C1951E6C3004DB12A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A99EF5321951E25E004DB12A /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,7 @@
 		A99EF5321951E25E004DB12A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		A99EF5341951E2D1004DB12A /* ASTXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTXMLParser.h; sourceTree = "<group>"; };
 		A99EF5351951E2D1004DB12A /* ASTXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTXMLParser.m; sourceTree = "<group>"; };
+		A99EF53A1951E656004DB12A /* ASTXMLParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTXMLParserTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A99EF53C1951E6C3004DB12A /* libxml2.dylib in Frameworks */,
 				A99EF4D11951CECA004DB12A /* XCTest.framework in Frameworks */,
 				A99EF4D71951CECA004DB12A /* libStaticLibrary.a in Frameworks */,
 				A99EF4D41951CECA004DB12A /* UIKit.framework in Frameworks */,
@@ -171,8 +175,9 @@
 		A99EF4D81951CECA004DB12A /* StaticLibraryTests */ = {
 			isa = PBXGroup;
 			children = (
-				A99EF4DE1951CECA004DB12A /* StaticLibraryTests.m */,
 				A99EF4D91951CECA004DB12A /* Supporting Files */,
+				A99EF4DE1951CECA004DB12A /* StaticLibraryTests.m */,
+				A99EF53A1951E656004DB12A /* ASTXMLParserTests.m */,
 			);
 			path = StaticLibraryTests;
 			sourceTree = "<group>";
@@ -352,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A99EF4DF1951CECA004DB12A /* StaticLibraryTests.m in Sources */,
+				A99EF53B1951E656004DB12A /* ASTXMLParserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
