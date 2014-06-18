@@ -25,6 +25,7 @@
 		A99EF5001951D021004DB12A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A99EF4FE1951D021004DB12A /* InfoPlist.strings */; };
 		A99EF52A1951DAA1004DB12A /* libStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A99EF4EE1951CECB004DB12A /* libStaticLibrary.a */; };
 		A99EF52B1951DAA7004DB12A /* StaticLibraryResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A99EF4F81951D021004DB12A /* StaticLibraryResources.bundle */; };
+		A99EF5391951E629004DB12A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A99EF5381951E629004DB12A /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		A99EF4FD1951D021004DB12A /* StaticLibraryResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StaticLibraryResources-Info.plist"; sourceTree = "<group>"; };
 		A99EF4FF1951D021004DB12A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A99EF5011951D021004DB12A /* StaticLibraryResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StaticLibraryResources-Prefix.pch"; sourceTree = "<group>"; };
+		A99EF5381951E629004DB12A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A99EF5391951E629004DB12A /* libxml2.dylib in Frameworks */,
 				A99EF52A1951DAA1004DB12A /* libStaticLibrary.a in Frameworks */,
 				A99EF4841951CE9F004DB12A /* CoreGraphics.framework in Frameworks */,
 				A99EF4861951CE9F004DB12A /* UIKit.framework in Frameworks */,
@@ -158,6 +161,7 @@
 		A99EF4801951CE9F004DB12A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A99EF5381951E629004DB12A /* libxml2.dylib */,
 				A99EF4811951CE9F004DB12A /* Foundation.framework */,
 				A99EF4831951CE9F004DB12A /* CoreGraphics.framework */,
 				A99EF4851951CE9F004DB12A /* UIKit.framework */,

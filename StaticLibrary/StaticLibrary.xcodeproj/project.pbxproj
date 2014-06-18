@@ -24,6 +24,8 @@
 		A99EF5261951D452004DB12A /* NSBundle+StaticLibraryBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = A99EF5251951D452004DB12A /* NSBundle+StaticLibraryBundle.m */; };
 		A99EF5301951DECC004DB12A /* NSBundle+StaticLibraryBundle.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A99EF5241951D452004DB12A /* NSBundle+StaticLibraryBundle.h */; };
 		A99EF5311951DECC004DB12A /* ASTLemongrabViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A99EF51C1951D429004DB12A /* ASTLemongrabViewController.h */; };
+		A99EF5361951E2D1004DB12A /* ASTXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A99EF5351951E2D1004DB12A /* ASTXMLParser.m */; };
+		A99EF5371951E477004DB12A /* ASTXMLParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = A99EF5341951E2D1004DB12A /* ASTXMLParser.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				A99EF5371951E477004DB12A /* ASTXMLParser.h in CopyFiles */,
 				A99EF5301951DECC004DB12A /* NSBundle+StaticLibraryBundle.h in CopyFiles */,
 				A99EF5311951DECC004DB12A /* ASTLemongrabViewController.h in CopyFiles */,
 				A99EF4C81951CECA004DB12A /* StaticLibrary.h in CopyFiles */,
@@ -74,6 +77,9 @@
 		A99EF51E1951D429004DB12A /* ASTLemongrabViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTLemongrabViewController.xib; sourceTree = "<group>"; };
 		A99EF5241951D452004DB12A /* NSBundle+StaticLibraryBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+StaticLibraryBundle.h"; sourceTree = "<group>"; };
 		A99EF5251951D452004DB12A /* NSBundle+StaticLibraryBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+StaticLibraryBundle.m"; sourceTree = "<group>"; };
+		A99EF5321951E25E004DB12A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		A99EF5341951E2D1004DB12A /* ASTXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTXMLParser.h; sourceTree = "<group>"; };
+		A99EF5351951E2D1004DB12A /* ASTXMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTXMLParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,7 @@
 		A99EF4C11951CECA004DB12A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A99EF5321951E25E004DB12A /* libxml2.dylib */,
 				A99EF4C21951CECA004DB12A /* Foundation.framework */,
 				A99EF4D01951CECA004DB12A /* XCTest.framework */,
 				A99EF4D31951CECA004DB12A /* UIKit.framework */,
@@ -146,6 +153,8 @@
 				A99EF4C51951CECA004DB12A /* Supporting Files */,
 				A99EF5231951D444004DB12A /* Categories */,
 				A99EF51B1951D429004DB12A /* Controllers */,
+				A99EF5341951E2D1004DB12A /* ASTXMLParser.h */,
+				A99EF5351951E2D1004DB12A /* ASTXMLParser.m */,
 				A99EF4C71951CECA004DB12A /* StaticLibrary.h */,
 			);
 			path = StaticLibrary;
@@ -334,6 +343,7 @@
 			files = (
 				A99EF5261951D452004DB12A /* NSBundle+StaticLibraryBundle.m in Sources */,
 				A99EF51F1951D429004DB12A /* ASTLemongrabViewController.m in Sources */,
+				A99EF5361951E2D1004DB12A /* ASTXMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +459,11 @@
 				DSTROOT = /tmp/StaticLibrary.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StaticLibrary/StaticLibrary-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -461,6 +476,11 @@
 				DSTROOT = /tmp/StaticLibrary.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StaticLibrary/StaticLibrary-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

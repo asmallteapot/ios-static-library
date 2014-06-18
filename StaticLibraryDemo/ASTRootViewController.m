@@ -8,14 +8,24 @@
 
 #import "ASTRootViewController.h"
 #import <StaticLibrary/ASTLemongrabViewController.h>
+#import <StaticLibrary/ASTXMLParser.h>
 
 
 @interface ASTRootViewController ()
+@property (strong, nonatomic) ASTXMLParser *XMLParser;
+
 - (IBAction)showLemongrab:(id)sender;
 @end
 
 
 @implementation ASTRootViewController
+
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    self.XMLParser = [[ASTXMLParser alloc] init];
+    NSLog(@"XML parser: %@", self.XMLParser);
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
