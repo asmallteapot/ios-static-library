@@ -1,5 +1,5 @@
 //
-//  VLMAppDelegate.h
+//  ASTRootViewController.h
 //  StaticLibraryDemo
 //
 //  Created by Bill Williams on 18.06.14.
@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VLMAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
+/**
+ View controller for demonstrating StaticLibrary.
+ */
+@interface ASTRootViewController : UIViewController
 @end

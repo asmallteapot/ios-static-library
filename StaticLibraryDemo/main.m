@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "VLMAppDelegate.h"
+#import "ASTAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([VLMAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([ASTAppDelegate class]));
     }
 }

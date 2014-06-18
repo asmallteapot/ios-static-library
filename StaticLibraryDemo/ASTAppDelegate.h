@@ -1,5 +1,5 @@
 //
-//  VLMViewController.h
+//  ASTAppDelegate.h
 //  StaticLibraryDemo
 //
 //  Created by Bill Williams on 18.06.14.
@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface VLMViewController : UIViewController
 
+@interface ASTAppDelegate : UIResponder <UIApplicationDelegate>
+@property (strong, nonatomic) UIWindow *window;
 @end

@@ -12,15 +12,19 @@
 		A99EF4861951CE9F004DB12A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99EF4851951CE9F004DB12A /* UIKit.framework */; };
 		A99EF48C1951CE9F004DB12A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A99EF48A1951CE9F004DB12A /* InfoPlist.strings */; };
 		A99EF48E1951CE9F004DB12A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A99EF48D1951CE9F004DB12A /* main.m */; };
-		A99EF4921951CE9F004DB12A /* VLMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A99EF4911951CE9F004DB12A /* VLMAppDelegate.m */; };
+		A99EF4921951CE9F004DB12A /* ASTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A99EF4911951CE9F004DB12A /* ASTAppDelegate.m */; };
 		A99EF4951951CE9F004DB12A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A99EF4931951CE9F004DB12A /* Main.storyboard */; };
-		A99EF4981951CE9F004DB12A /* VLMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A99EF4971951CE9F004DB12A /* VLMViewController.m */; };
+		A99EF4981951CE9F004DB12A /* ASTRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A99EF4971951CE9F004DB12A /* ASTRootViewController.m */; };
 		A99EF49A1951CE9F004DB12A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A99EF4991951CE9F004DB12A /* Images.xcassets */; };
 		A99EF4A11951CE9F004DB12A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99EF4A01951CE9F004DB12A /* XCTest.framework */; };
 		A99EF4A21951CE9F004DB12A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99EF4811951CE9F004DB12A /* Foundation.framework */; };
 		A99EF4A31951CE9F004DB12A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99EF4851951CE9F004DB12A /* UIKit.framework */; };
 		A99EF4AB1951CE9F004DB12A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A99EF4A91951CE9F004DB12A /* InfoPlist.strings */; };
 		A99EF4AD1951CE9F004DB12A /* StaticLibraryDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A99EF4AC1951CE9F004DB12A /* StaticLibraryDemoTests.m */; };
+		A99EF4FA1951D021004DB12A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A99EF4F91951D021004DB12A /* CoreFoundation.framework */; };
+		A99EF5001951D021004DB12A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A99EF4FE1951D021004DB12A /* InfoPlist.strings */; };
+		A99EF52A1951DAA1004DB12A /* libStaticLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A99EF4EE1951CECB004DB12A /* libStaticLibrary.a */; };
+		A99EF52B1951DAA7004DB12A /* StaticLibraryResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A99EF4F81951D021004DB12A /* StaticLibraryResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +34,41 @@
 			proxyType = 1;
 			remoteGlobalIDString = A99EF47D1951CE9F004DB12A;
 			remoteInfo = StaticLibraryDemo;
+		};
+		A99EF4ED1951CECB004DB12A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A99EF4E81951CECA004DB12A /* StaticLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A99EF4BF1951CECA004DB12A;
+			remoteInfo = StaticLibrary;
+		};
+		A99EF4EF1951CECB004DB12A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A99EF4E81951CECA004DB12A /* StaticLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A99EF4CF1951CECA004DB12A;
+			remoteInfo = StaticLibraryTests;
+		};
+		A99EF5281951DAA1004DB12A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A99EF4E81951CECA004DB12A /* StaticLibrary.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A99EF5091951D033004DB12A;
+			remoteInfo = StaticLibraryResources;
+		};
+		A99EF52C1951DEB4004DB12A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A99EF4E81951CECA004DB12A /* StaticLibrary.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A99EF4BE1951CECA004DB12A;
+			remoteInfo = StaticLibrary;
+		};
+		A99EF52E1951DEB4004DB12A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A99EF4E81951CECA004DB12A /* StaticLibrary.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A99EF5081951D033004DB12A;
+			remoteInfo = StaticLibraryResources;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -42,17 +81,23 @@
 		A99EF48B1951CE9F004DB12A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A99EF48D1951CE9F004DB12A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A99EF48F1951CE9F004DB12A /* StaticLibraryDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StaticLibraryDemo-Prefix.pch"; sourceTree = "<group>"; };
-		A99EF4901951CE9F004DB12A /* VLMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLMAppDelegate.h; sourceTree = "<group>"; };
-		A99EF4911951CE9F004DB12A /* VLMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLMAppDelegate.m; sourceTree = "<group>"; };
+		A99EF4901951CE9F004DB12A /* ASTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASTAppDelegate.h; sourceTree = "<group>"; };
+		A99EF4911951CE9F004DB12A /* ASTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASTAppDelegate.m; sourceTree = "<group>"; };
 		A99EF4941951CE9F004DB12A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A99EF4961951CE9F004DB12A /* VLMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VLMViewController.h; sourceTree = "<group>"; };
-		A99EF4971951CE9F004DB12A /* VLMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLMViewController.m; sourceTree = "<group>"; };
+		A99EF4961951CE9F004DB12A /* ASTRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASTRootViewController.h; sourceTree = "<group>"; };
+		A99EF4971951CE9F004DB12A /* ASTRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASTRootViewController.m; sourceTree = "<group>"; };
 		A99EF4991951CE9F004DB12A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A99EF49F1951CE9F004DB12A /* StaticLibraryDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StaticLibraryDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A99EF4A01951CE9F004DB12A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A99EF4A81951CE9F004DB12A /* StaticLibraryDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StaticLibraryDemoTests-Info.plist"; sourceTree = "<group>"; };
 		A99EF4AA1951CE9F004DB12A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A99EF4AC1951CE9F004DB12A /* StaticLibraryDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StaticLibraryDemoTests.m; sourceTree = "<group>"; };
+		A99EF4E81951CECA004DB12A /* StaticLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StaticLibrary.xcodeproj; path = StaticLibrary/StaticLibrary.xcodeproj; sourceTree = "<group>"; };
+		A99EF4F81951D021004DB12A /* StaticLibraryResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StaticLibraryResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		A99EF4F91951D021004DB12A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		A99EF4FD1951D021004DB12A /* StaticLibraryResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StaticLibraryResources-Info.plist"; sourceTree = "<group>"; };
+		A99EF4FF1951D021004DB12A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A99EF5011951D021004DB12A /* StaticLibraryResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StaticLibraryResources-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A99EF52A1951DAA1004DB12A /* libStaticLibrary.a in Frameworks */,
 				A99EF4841951CE9F004DB12A /* CoreGraphics.framework in Frameworks */,
 				A99EF4861951CE9F004DB12A /* UIKit.framework in Frameworks */,
 				A99EF4821951CE9F004DB12A /* Foundation.framework in Frameworks */,
@@ -76,14 +122,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A99EF4F51951D021004DB12A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A99EF4FA1951D021004DB12A /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		A99EF4751951CE9F004DB12A = {
 			isa = PBXGroup;
 			children = (
+				A99EF4E81951CECA004DB12A /* StaticLibrary.xcodeproj */,
 				A99EF4871951CE9F004DB12A /* StaticLibraryDemo */,
 				A99EF4A61951CE9F004DB12A /* StaticLibraryDemoTests */,
+				A99EF4FB1951D021004DB12A /* StaticLibraryResources */,
 				A99EF4801951CE9F004DB12A /* Frameworks */,
 				A99EF47F1951CE9F004DB12A /* Products */,
 			);
@@ -94,6 +150,7 @@
 			children = (
 				A99EF47E1951CE9F004DB12A /* StaticLibraryDemo.app */,
 				A99EF49F1951CE9F004DB12A /* StaticLibraryDemoTests.xctest */,
+				A99EF4F81951D021004DB12A /* StaticLibraryResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,6 +162,7 @@
 				A99EF4831951CE9F004DB12A /* CoreGraphics.framework */,
 				A99EF4851951CE9F004DB12A /* UIKit.framework */,
 				A99EF4A01951CE9F004DB12A /* XCTest.framework */,
+				A99EF4F91951D021004DB12A /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,11 +170,11 @@
 		A99EF4871951CE9F004DB12A /* StaticLibraryDemo */ = {
 			isa = PBXGroup;
 			children = (
-				A99EF4901951CE9F004DB12A /* VLMAppDelegate.h */,
-				A99EF4911951CE9F004DB12A /* VLMAppDelegate.m */,
+				A99EF4901951CE9F004DB12A /* ASTAppDelegate.h */,
+				A99EF4911951CE9F004DB12A /* ASTAppDelegate.m */,
 				A99EF4931951CE9F004DB12A /* Main.storyboard */,
-				A99EF4961951CE9F004DB12A /* VLMViewController.h */,
-				A99EF4971951CE9F004DB12A /* VLMViewController.m */,
+				A99EF4961951CE9F004DB12A /* ASTRootViewController.h */,
+				A99EF4971951CE9F004DB12A /* ASTRootViewController.m */,
 				A99EF4991951CE9F004DB12A /* Images.xcassets */,
 				A99EF4881951CE9F004DB12A /* Supporting Files */,
 			);
@@ -152,6 +210,34 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A99EF4E91951CECA004DB12A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A99EF4EE1951CECB004DB12A /* libStaticLibrary.a */,
+				A99EF4F01951CECB004DB12A /* StaticLibraryTests.xctest */,
+				A99EF5291951DAA1004DB12A /* StaticLibraryResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A99EF4FB1951D021004DB12A /* StaticLibraryResources */ = {
+			isa = PBXGroup;
+			children = (
+				A99EF4FC1951D021004DB12A /* Supporting Files */,
+			);
+			path = StaticLibraryResources;
+			sourceTree = "<group>";
+		};
+		A99EF4FC1951D021004DB12A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A99EF4FD1951D021004DB12A /* StaticLibraryResources-Info.plist */,
+				A99EF4FE1951D021004DB12A /* InfoPlist.strings */,
+				A99EF5011951D021004DB12A /* StaticLibraryResources-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +252,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				A99EF52D1951DEB4004DB12A /* PBXTargetDependency */,
+				A99EF52F1951DEB4004DB12A /* PBXTargetDependency */,
 			);
 			name = StaticLibraryDemo;
 			productName = StaticLibraryDemo;
@@ -190,13 +278,30 @@
 			productReference = A99EF49F1951CE9F004DB12A /* StaticLibraryDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A99EF4F71951D021004DB12A /* StaticLibraryResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A99EF5021951D022004DB12A /* Build configuration list for PBXNativeTarget "StaticLibraryResources" */;
+			buildPhases = (
+				A99EF4F41951D021004DB12A /* Sources */,
+				A99EF4F51951D021004DB12A /* Frameworks */,
+				A99EF4F61951D021004DB12A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StaticLibraryResources;
+			productName = StaticLibraryResources;
+			productReference = A99EF4F81951D021004DB12A /* StaticLibraryResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		A99EF4761951CE9F004DB12A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = VLM;
+				CLASSPREFIX = AST;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "A Small Teapot";
 				TargetAttributes = {
@@ -216,19 +321,51 @@
 			mainGroup = A99EF4751951CE9F004DB12A;
 			productRefGroup = A99EF47F1951CE9F004DB12A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A99EF4E91951CECA004DB12A /* Products */;
+					ProjectRef = A99EF4E81951CECA004DB12A /* StaticLibrary.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A99EF47D1951CE9F004DB12A /* StaticLibraryDemo */,
 				A99EF49E1951CE9F004DB12A /* StaticLibraryDemoTests */,
+				A99EF4F71951D021004DB12A /* StaticLibraryResources */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		A99EF4EE1951CECB004DB12A /* libStaticLibrary.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libStaticLibrary.a;
+			remoteRef = A99EF4ED1951CECB004DB12A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A99EF4F01951CECB004DB12A /* StaticLibraryTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = StaticLibraryTests.xctest;
+			remoteRef = A99EF4EF1951CECB004DB12A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A99EF5291951DAA1004DB12A /* StaticLibraryResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = StaticLibraryResources.bundle;
+			remoteRef = A99EF5281951DAA1004DB12A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		A99EF47C1951CE9F004DB12A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A99EF52B1951DAA7004DB12A /* StaticLibraryResources.bundle in Resources */,
 				A99EF49A1951CE9F004DB12A /* Images.xcassets in Resources */,
 				A99EF48C1951CE9F004DB12A /* InfoPlist.strings in Resources */,
 				A99EF4951951CE9F004DB12A /* Main.storyboard in Resources */,
@@ -243,6 +380,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A99EF4F61951D021004DB12A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A99EF5001951D021004DB12A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -250,9 +395,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A99EF4921951CE9F004DB12A /* VLMAppDelegate.m in Sources */,
+				A99EF4921951CE9F004DB12A /* ASTAppDelegate.m in Sources */,
 				A99EF48E1951CE9F004DB12A /* main.m in Sources */,
-				A99EF4981951CE9F004DB12A /* VLMViewController.m in Sources */,
+				A99EF4981951CE9F004DB12A /* ASTRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +409,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A99EF4F41951D021004DB12A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -271,6 +423,16 @@
 			isa = PBXTargetDependency;
 			target = A99EF47D1951CE9F004DB12A /* StaticLibraryDemo */;
 			targetProxy = A99EF4A41951CE9F004DB12A /* PBXContainerItemProxy */;
+		};
+		A99EF52D1951DEB4004DB12A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StaticLibrary;
+			targetProxy = A99EF52C1951DEB4004DB12A /* PBXContainerItemProxy */;
+		};
+		A99EF52F1951DEB4004DB12A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = StaticLibraryResources;
+			targetProxy = A99EF52E1951DEB4004DB12A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -295,6 +457,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				A99EF4AA1951CE9F004DB12A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A99EF4FE1951D021004DB12A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A99EF4FF1951D021004DB12A /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -375,12 +545,15 @@
 		A99EF4B11951CE9F004DB12A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StaticLibraryDemo/StaticLibraryDemo-Prefix.pch";
 				INFOPLIST_FILE = "StaticLibraryDemo/StaticLibraryDemo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -388,12 +561,15 @@
 		A99EF4B21951CE9F004DB12A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "StaticLibraryDemo/StaticLibraryDemo-Prefix.pch";
 				INFOPLIST_FILE = "StaticLibraryDemo/StaticLibraryDemo-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -438,6 +614,43 @@
 			};
 			name = Release;
 		};
+		A99EF5031951D022004DB12A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StaticLibraryResources/StaticLibraryResources-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "StaticLibraryResources/StaticLibraryResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		A99EF5041951D022004DB12A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StaticLibraryResources/StaticLibraryResources-Prefix.pch";
+				INFOPLIST_FILE = "StaticLibraryResources/StaticLibraryResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -463,6 +676,14 @@
 			buildConfigurations = (
 				A99EF4B41951CE9F004DB12A /* Debug */,
 				A99EF4B51951CE9F004DB12A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A99EF5021951D022004DB12A /* Build configuration list for PBXNativeTarget "StaticLibraryResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99EF5031951D022004DB12A /* Debug */,
+				A99EF5041951D022004DB12A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
