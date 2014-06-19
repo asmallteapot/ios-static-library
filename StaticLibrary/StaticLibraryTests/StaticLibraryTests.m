@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "NSBundle+StaticLibraryBundle.h"
 
 
 @interface StaticLibraryTests : XCTestCase
@@ -24,6 +25,11 @@
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
+}
+
+
+- (void)testResourcesBundle {
+    XCTAssertNotNil([NSBundle staticLibraryBundle], @"Resources bundle should be accessible through category method.");
 }
 
 @end

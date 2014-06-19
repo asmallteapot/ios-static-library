@@ -674,6 +674,7 @@
 				A99EF4B21951CE9F004DB12A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A99EF4B31951CE9F004DB12A /* Build configuration list for PBXNativeTarget "StaticLibraryDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -682,6 +683,7 @@
 				A99EF4B51951CE9F004DB12A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A99EF5021951D022004DB12A /* Build configuration list for PBXNativeTarget "StaticLibraryResources" */ = {
 			isa = XCConfigurationList;
@@ -690,6 +692,7 @@
 				A99EF5041951D022004DB12A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
